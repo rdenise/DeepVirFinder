@@ -40,6 +40,7 @@ setuptools.setup(
                     'tensorflow==1.14.0',
                     'theano==1.0.4',
                     'h5py==2.10.0',
+                    'scipy<1.6.0'
                     ],
     scripts=[
         'deepvirfinder/dvf.py',
