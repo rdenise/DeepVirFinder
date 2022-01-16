@@ -22,7 +22,7 @@ import numpy as np
 
 import platform
 
-if "darwin" in platform.platform():
+if "darwin" in platform.platform().lower():
     import theano
     theano.config.gcc.cxxflags = "-Wno-c++11-narrowing"
 
