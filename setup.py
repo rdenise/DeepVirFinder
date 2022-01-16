@@ -8,14 +8,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="deepvirfinder",
-    version="0.9-beta",
+    version="1.0-beta",
     author="Jie Ren",
     author_email="renj@usc.edu",
     description="Identifying viruses from metagenomic data by deep learning",
     long_description=long_description,
     long_description_content_type="text/markdown",
     # Using my fork for now
-    url="https://github.com/papanikos/DeepVirFinder",
+    url="https://github.com/rdenise/DeepVirFinder",
     keywords="machine learning, bioinformatics, metagenomics, viromics",
     packages=setuptools.find_packages(),
     classifiers=[
@@ -32,14 +32,14 @@ setuptools.setup(
     # used during development, installed with
     # $ conda create -n dvf python=3.6 biopython numpy theano keras scikit-learn
     install_requires=[
-                    'biopython==1.77',
+                    'biopython==1.79',
                     'tqdm==4.62.3',
                     'keras==2.3.1',
                     'numpy==1.17.0',
                     'scikit-learn==0.23.1',
                     'tensorflow==1.14.0',
                     'theano==1.0.4',
-                    'h5py==2.10.0'
+                    'h5py==2.10.0',
                     ],
     scripts=[
         'deepvirfinder/dvf.py',
