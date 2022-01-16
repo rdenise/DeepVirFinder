@@ -13,7 +13,7 @@ import warnings
 import pkg_resources
 from pathlib import Path
 
-import Bio.SeqIO as SeqIO
+from Bio import SeqIO
 import argparse
 import tqdm
 import h5py
