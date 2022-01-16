@@ -20,6 +20,12 @@ import h5py
 import multiprocessing as mp
 import numpy as np
 
+import platform
+
+if "darwin" in platform.platform():
+    import theano
+    theano.config.gcc.cxxflags = "-Wno-c++11-narrowing"
+
 # Suppress warnings and output when importing libraries
 warnings.filterwarnings('ignore', 'Error in loading the saved optimizer ')
 warnings.filterwarnings('ignore', category=FutureWarning)
